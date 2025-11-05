@@ -12,6 +12,12 @@ It uses:
 
 ---
 
+### Compile using 
+
+`lualatex -interaction=nonstopmode "EX00.tex"`
+
+---
+
 ## Files
 
 | File | Description |
@@ -33,3 +39,17 @@ Example usage:
 ```latex
 \usepackage[hebrew,english]{babel}
 \selectlanguage{hebrew}
+```
+
+Switch to English inside a slide, wrap your English text with the following two commands:
+```
+\selectlanguage{english}
+This text is left-to-right.
+\selectlanguage{hebrew}
+```
+
+Note that it is also recommended to wrap Tikz illustrations and Algorithm environments with these commands for consistency across documents.
+
+
+
+
