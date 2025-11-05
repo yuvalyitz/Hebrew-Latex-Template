@@ -1,0 +1,65 @@
+\documentclass{article}
+
+\usepackage{algorithm}
+\usepackage[noend]{algpseudocode}
+
+\usepackage{multicol}
+
+\usepackage{graphicx}
+
+\usepackage{polyglossia} %This is the package that gives access to fonts.
+% for theorems
+\usepackage{amsthm}
+
+\usepackage{tikz}
+\usepackage{tikz-network}
+\usepackage{pgfplots}
+
+
+
+% good af for maths
+\usepackage{amsmath}
+
+% Change bullet types in itemize
+\usepackage{enumitem}
+\usepackage{pifont}
+
+% Headers
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+
+% Table
+\usepackage{amsfonts}
+\usepackage{booktabs}
+\usepackage{siunitx}
+
+% These two packages
+\usepackage{etoolbox}
+\usepackage{fontspec}
+\setmainfont{Linux Libertine O}
+\newfontfamily\quotefont{Miriam CLM}
+\AtBeginEnvironment{quote}{\quotefont}
+
+
+\setdefaultlanguage{hebrew}  %this makes the titles RTL, switch these if you write mostly in English
+\setotherlanguage{english}  
+\newfontfamily\hebrewfont[Script=Hebrew]{Miriam Mono CLM} %This font will work in Overleaf, Linux and Mac installs, if you're running windows you'd need to pick the right ones
+\newfontfamily\hebrewfontsf[Script=Hebrew]{Miriam CLM}
+
+
+
+\newtheorem{theorem}{\protect\theorem}
+
+\addto\captionsenglish{%
+  \renewcommand{\theorem}{Theorem}%
+}
+\addto\captionshebrew{%
+  \renewcommand{\theorem}{\textbf{הגדרה}}%
+}
+
+\begin{document}
+
+אין לי משהו שקרוב להיות מוצלח מספיק להעלות לפה.
+מוזמנים לתרום!
+
+\end{document}

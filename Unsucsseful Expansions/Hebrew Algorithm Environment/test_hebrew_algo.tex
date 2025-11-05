@@ -1,0 +1,81 @@
+
+\documentclass{article}
+
+\input{HW/config}
+
+\usepackage[algo2e]{algorithm2e} 
+
+
+
+
+
+\SetKwHangingKw{KwHData}{Data$\rightarrow$}
+\SetKwInput{KwIn}{Input}%
+\SetKwInput{KwOut}{Output}%
+\SetKwInput{KwData}{Data}%
+\SetKwInput{KwResult}{Result}%
+\SetKw{KwTo}{to}
+\SetKw{KwRet}{return}%
+\SetKw{Return}{return}%
+\SetKwBlock{Begin}{begin}{end}%
+\SetKwRepeat{Repeat}{repeat}{until}%
+%
+\SetKwIF{If}{ElseIf}{Else}{if}{then}{else if}{else}{end if}%
+\SetKwSwitch{Switch}{Case}{Other}{switch}{do}{case}{otherwise}{end case}{end switch}%
+\SetKwFor{For}{for}{do}{end for}%
+\SetKwFor{ForPar}{for}{do in parallel}{end forpar}
+\SetKwFor{ForEach}{foreach}{do}{end foreach}%
+\SetKwFor{ForAll}{forall}{do}{end forall}%
+\SetKwFor{While}{while}{do}{end while}%
+
+% Here is the complete definition of content for French algorithms (taken from algorithm2e.sty):
+
+\SetKwHangingKw{HDonnees}{Donnees$\rightarrow$}
+\SetKwInput{Donnees}{Donn\'ees}%
+\SetKwInput{Res}{R\'esultat}%
+\SetKwInput{Entree}{Entr\'ees}%
+\SetKwInput{Sortie}{Sorties}%
+\SetKw{KwA}{\`a}%
+\SetKw{Retour}{retourner}%
+\SetKwBlock{Deb}{d\'ebut}{fin}%
+\SetKwRepeat{Repeter}{r\'ep\'eter}{jusqu'\`a}%
+%
+\SetKwIF{If}{SinonSi}{Sinon}{אם}{אז}{sinon si}{sinon}{סיים אם}%
+\SetKwSwitch{Suivant}{Cas}{Autre}{suivant}{faire}{cas o\`u}{autres cas}{fin cas}{fin d'alternative}%
+\SetKwFor{While}{כל עוד}{עשה}{סוף-לולאה pour}%
+\SetKwFor{PourPar}{pour}{faire en parall\`ele}{fin pour}%
+\SetKwFor{PourCh}{pour chaque}{faire}{fin pour chaque}%
+\SetKwFor{PourTous}{pour tous les}{faire}{fin pour tous}%
+\SetKwFor{For}{עבור}{עשה}{ סיים לולאה tq}%
+
+
+
+
+
+\begin{document}
+
+
+\begin{algorithm}[H]
+  \renewcommand{\algorithmcfname}{Algorithme}%
+  \SetAlgoLined
+
+צור שני מצביעים: $i=1$ לתחילת המערך ו-$j=n$ לסופו
+
+   
+    \While{$i<j$ }{
+
+        \If{$A[i]+A[j] = Sum$}{
+          החזר "כן"
+        }
+        \If{$A[i]+A[j] < Sum$}{
+            $i = i+1$
+        }
+        \If{$A[i]+A[j] > Sum$}{
+            $j = j-1$
+        }
+    }{
+    }
+\end{algorithm}
+
+
+\end{document}

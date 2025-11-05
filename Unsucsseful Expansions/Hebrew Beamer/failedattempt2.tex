@@ -1,0 +1,88 @@
+% \documentclass{beamer-rl}
+\documentclass[aspectratio=169,10pt]{beamer}
+\usepackage[bidi=default]{babel}
+
+
+% \include{macros.tex}
+\babelprovide[main, import]{hebrew}
+\babelfont{rm}{FreeSerif}
+\babelfont{sf}{FreeSans}
+\babelfont{tt}{FreeMono}
+\usepackage{booktabs} 
+
+% \usepackage[inkscapeformat=png]{svg}
+% \usepackage[normalem]{ulem}
+\usepackage{animate}
+
+
+\usepackage{polyglossia}
+\setdefaultlanguage{hebrew}  %this makes the titles RTL, switch these if you write mostly in English
+\setotherlanguage{english}  
+\newfontfamily\hebrewfont[Script=Hebrew]{Miriam Mono CLM} %This font will work in Overleaf, Linux and Mac installs, if you're running windows you'd need to pick the right ones
+\newfontfamily\hebrewfontsf[Script=Hebrew]{Miriam CLM}
+
+% \usepackage{pgf}
+
+% \begin{filecontents*}[overwrite]{translator-theorem-dictionary-Hebrew.dict}
+% \providetranslation{Definition}{הגדרה}
+% \providetranslation{Theorem}{משפט}
+% \providetranslation{Corollary}{מסקנה}
+% \end{filecontents*}
+
+\usepackage{amsthm}
+\usepackage{amssymb}
+
+\uselanguage{hebrew}
+
+\usetheme[progressbar=frametitle]{metropolis}
+
+
+
+
+\title{Failed Attempt to Create Hebrew XeLaTex Presi}
+
+\date{}
+
+\setbeamertemplate{section in toc}[sections numbered]
+
+\begin{document}
+
+\maketitle
+
+\begin{frame}{Title}
+
+I unfortunately couldn't make the same
+compiler to compile both docs and presis.
+
+Atm I'm using 
+XeLaTex
+for docs
+and
+LuaLaTex 
+for presis.
+
+Look for the LuaLatex Hebrew Project!
+\end{frame}
+
+\begin{frame}{כותרת}
+
+לא הצלחתי להשתמש באותו
+מהדר 
+(קומפיילר)
+גם למצגות וגם למסמכים.
+החיים לא מושלמים.
+בינתיים אני משתמש ב
+XeLaTex
+בשביל המסמכים
+וב
+LuaLaTex 
+בשביל מצגות.
+
+חפשו את הפרוייקט ב
+LuaLaTex
+הוא לא רע.
+
+\end{frame}
+
+
+\end{document}
