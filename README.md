@@ -1,55 +1,39 @@
+# Hebrew LaTeX Template
+
+A minimal LaTeX setup for writing Hebrew (RTL) documents with proper directionality, modern fonts, and compatibility with both Hebrew and English text.
+
+---
+
 ## Overview
 
-This template provides a minimal but robust setup for right-to-left (RTL) Hebrew slides, while remaining compatible with English text, math, and standard Beamer features.
+This template provides a clean and stable baseline for Hebrew LaTeX projects — articles, reports, or coursework — that mix Hebrew and English text.  
+It is based on a modern toolchain supporting OpenType fonts, proper punctuation mirroring, and Unicode input.
 
 It uses:
 
-- [`babel`](https://ctan.org/pkg/babel) for proper Hebrew language and bidirectional (bidi) text support  
-- [`fontspec`](https://ctan.org/pkg/fontspec) for OpenType font selection  
-- [`beamer`](https://ctan.org/pkg/beamer) as the base presentation class  
-- A separate `config.tex` for easy customization (fonts, colors, and theme settings)  
-- Optional `logo.png` for institutional branding  
+- [`babel`](https://ctan.org/pkg/babel) for Hebrew language support and bidirectional typesetting  
+- [`fontspec`](https://ctan.org/pkg/fontspec) for OpenType fonts  
+- [`polyglossia`](https://ctan.org/pkg/polyglossia) as an alternative for XeLaTeX users  
 
 ---
 
-### Compile using 
+### Compile using
 
-`lualatex -interaction=nonstopmode "EX00.tex"`
-
----
-
-## Files
-
-| File | Description |
-|------|--------------|
-| `EX00.tex` | Main presentation source file (acts as entry point) |
-| `EX00D.tex` | Example deck or Hebrew/English variant |
-| `config.tex` | Contains theme configuration, color setup, and font definitions |
-| `logo.png` | Logo used in the title slide (optional) |
+```bash
+xelatex -interaction=nonstopmode "EX00.tex"
+```
 
 ---
 
 ## Key Packages
+babel
 
-### `babel`
-Handles bidirectional Hebrew text, punctuation mirroring, and RTL alignment automatically.  
-It replaces older `bidi` and `polyglossia` stacks and works seamlessly with `luatex` and `xelatex`.
+babel provides full Hebrew support including right-to-left directionality, punctuation mirroring, and localized captions.
 
-Example usage:
-```latex
-\usepackage[hebrew,english]{babel}
-\selectlanguage{hebrew}
+For short English text inside Hebrew paragraphs, use:
+
 ```
-
-Switch to English inside a slide, wrap your English text with the following two commands:
-```
-\selectlanguage{english}
-This text is left-to-right.
-\selectlanguage{hebrew}
+\textenglish{This text is left-to-right.}
 ```
 
 Note that it is also recommended to wrap Tikz illustrations and Algorithm environments with these commands for consistency across documents.
-
-
-
-
