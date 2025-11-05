@@ -1,12 +1,4 @@
-from pathlib import Path
-
-readme_content = """# Hebrew LaTeX Beamer
-
-A clean template for creating **Hebrew (RTL)** presentations with **LaTeX Beamer**, using the modern `babel` package and the **LuaLaTeX** compiler.
-
----
-
-## 🌍 Overview
+## Overview
 
 This template provides a minimal but robust setup for right-to-left (RTL) Hebrew slides, while remaining compatible with English text, math, and standard Beamer features.
 
@@ -20,7 +12,7 @@ It uses:
 
 ---
 
-## ⚙️ Files
+## Files
 
 | File | Description |
 |------|--------------|
@@ -31,7 +23,7 @@ It uses:
 
 ---
 
-## 🧩 Key Packages
+## Key Packages
 
 ### `babel`
 Handles bidirectional Hebrew text, punctuation mirroring, and RTL alignment automatically.  
